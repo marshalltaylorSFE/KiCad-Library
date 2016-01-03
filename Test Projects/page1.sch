@@ -612,4 +612,6 @@ Wire Wire Line
 	4950 4450 4850 4450
 Connection ~ 4850 4450
 Connection ~ 4850 4550
+Text Label 1950 2800 1    50   ~ 0
+Bulk_IN
 $EndSCHEMATC

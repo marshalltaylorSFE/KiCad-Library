@@ -106,26 +106,20 @@ Wire Wire Line
 	4850 4700 4950 4700
 Wire Wire Line
 	4950 4800 4850 4800
-Text GLabel 4650 5100 0    50   Input ~ 0
+Text GLabel 4850 5100 0    50   Input ~ 0
 BSER
-Text GLabel 4650 5200 0    50   Input ~ 0
+Text GLabel 4850 5200 0    50   Input ~ 0
 LEDSER
-Text GLabel 4450 5000 0    50   Input ~ 0
+Text GLabel 4850 5000 0    50   Input ~ 0
 LEDCLK
-Text GLabel 4450 4900 0    50   Input ~ 0
+Text GLabel 4850 4900 0    50   Input ~ 0
 BCLK
 Wire Wire Line
-	4450 5000 4950 5000
+	4850 5000 4950 5000
 Wire Wire Line
-	4550 5000 4550 4900
+	4850 5100 4950 5100
 Wire Wire Line
-	4650 5100 4950 5100
+	4950 5200 4850 5200
 Wire Wire Line
-	4750 5200 4650 5200
-Connection ~ 4750 5100
-Wire Wire Line
-	4550 4900 4450 4900
-Connection ~ 4550 5000
-Wire Wire Line
-	4750 5200 4750 5100
+	4950 4900 4850 4900
 $EndSCHEMATC

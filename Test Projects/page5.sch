@@ -521,21 +521,21 @@ Wire Wire Line
 Wire Wire Line
 	5700 2950 5650 2950
 Text GLabel 2550 2350 2    50   Input ~ 0
-OUT1
+KOUT1
 Text GLabel 2550 2750 2    50   Input ~ 0
-OUT2
+KOUT2
 Text GLabel 4850 2350 2    50   Input ~ 0
-OUT3
+KOUT3
 Text GLabel 4850 2750 2    50   Input ~ 0
-OUT4
+KOUT4
 Text GLabel 7150 2350 2    50   Input ~ 0
-OUT5
+KOUT5
 Text GLabel 7150 2750 2    50   Input ~ 0
-OUT6
+KOUT6
 Text GLabel 9450 2750 2    50   Input ~ 0
-OUT8
+KOUT8
 Text GLabel 9450 2350 2    50   Input ~ 0
-OUT7
+KOUT7
 Text GLabel 3050 6050 2    50   Input ~ 0
 KA0
 Text GLabel 3050 6450 2    50   Input ~ 0
