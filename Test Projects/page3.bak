@@ -122,4 +122,8 @@ Wire Wire Line
 	4950 5200 4850 5200
 Wire Wire Line
 	4950 4900 4850 4900
+Text GLabel 4850 3600 0    50   Input ~ 0
+KEN
+Wire Wire Line
+	4950 3600 4850 3600
 $EndSCHEMATC
