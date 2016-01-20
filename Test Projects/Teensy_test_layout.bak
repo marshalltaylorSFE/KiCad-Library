@@ -41,7 +41,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Core Teensy Audio"
 Date ""
 Rev ""
@@ -99,4 +99,10 @@ F1 "page6.sch" 60
 $EndSheet
 Text Notes 3200 4250 0    60   ~ 0
 LEDs
+$Sheet
+S 5000 3000 1700 1000
+U 569EDAE2
+F0 "page7" 60
+F1 "page7.sch" 60
+$EndSheet
 $EndSCHEMATC

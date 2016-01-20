@@ -1,4 +1,4 @@
-update=1/1/2016 11:41:21 PM
+update=1/19/2016 1:33:36 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -66,3 +66,21 @@ LibName34=D:/github/KiCad-Library/SparkFun-IC-PMIC
 LibName35=D:/github/KiCad-Library/SparkFun-Jacks
 LibName36=D:/github/KiCad-Library/SparkFun-Mounting
 LibName37=D:/github/KiCad-Library/SparkFun-Opto
+LibName38=C:/github/KiCad-Library/SparkFun-Copper
+LibName39=C:/github/KiCad-Library/SparkFun-IC-Analog
+LibName40=C:/github/KiCad-Library/SparkFun-IC-Logic
+LibName41=C:/github/KiCad-Library/SparkFun-IC-Memory
+LibName42=C:/github/KiCad-Library/SparkFun-IC-PMIC
+LibName43=C:/github/KiCad-Library/SparkFun-Jacks
+LibName44=C:/github/KiCad-Library/SparkFun-Mounting
+LibName45=C:/github/KiCad-Library/SparkFun-Opto
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
