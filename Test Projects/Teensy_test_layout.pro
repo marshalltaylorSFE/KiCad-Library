@@ -1,4 +1,4 @@
-update=1/19/2016 1:33:36 PM
+update=1/20/2016 10:59:54 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -74,13 +84,3 @@ LibName42=C:/github/KiCad-Library/SparkFun-IC-PMIC
 LibName43=C:/github/KiCad-Library/SparkFun-Jacks
 LibName44=C:/github/KiCad-Library/SparkFun-Mounting
 LibName45=C:/github/KiCad-Library/SparkFun-Opto
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
