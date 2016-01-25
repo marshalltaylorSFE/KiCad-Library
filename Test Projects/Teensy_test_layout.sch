@@ -72,7 +72,7 @@ $EndSheet
 Text Notes 3200 2650 0    60   ~ 0
 Logic
 Text Notes 5000 2650 0    60   ~ 0
-Analog
+Knob connections
 Text Notes 1400 2650 0    60   ~ 0
 Power
 $Sheet
@@ -105,4 +105,92 @@ U 569EDAE2
 F0 "page7" 60
 F1 "page7.sch" 60
 $EndSheet
+$Comp
+L Hole H1
+U 1 1 56A637B5
+P 1500 4950
+F 0 "H1" H 1500 4700 60  0000 C CNN
+F 1 "Hole" H 1500 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 1500 4950 60  0001 C CNN
+F 3 "" H 1500 4950 60  0000 C CNN
+	1    1500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H2
+U 1 1 56A638EB
+P 1900 4950
+F 0 "H2" H 1900 4700 60  0000 C CNN
+F 1 "Hole" H 1900 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 1900 4950 60  0001 C CNN
+F 3 "" H 1900 4950 60  0000 C CNN
+	1    1900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H3
+U 1 1 56A639E7
+P 2300 4950
+F 0 "H3" H 2300 4700 60  0000 C CNN
+F 1 "Hole" H 2300 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2300 4950 60  0001 C CNN
+F 3 "" H 2300 4950 60  0000 C CNN
+	1    2300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H4
+U 1 1 56A639ED
+P 2700 4950
+F 0 "H4" H 2700 4700 60  0000 C CNN
+F 1 "Hole" H 2700 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 2700 4950 60  0001 C CNN
+F 3 "" H 2700 4950 60  0000 C CNN
+	1    2700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H5
+U 1 1 56A63C2F
+P 3100 4950
+F 0 "H5" H 3100 4700 60  0000 C CNN
+F 1 "Hole" H 3100 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 3100 4950 60  0001 C CNN
+F 3 "" H 3100 4950 60  0000 C CNN
+	1    3100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H6
+U 1 1 56A63C35
+P 3500 4950
+F 0 "H6" H 3500 4700 60  0000 C CNN
+F 1 "Hole" H 3500 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 3500 4950 60  0001 C CNN
+F 3 "" H 3500 4950 60  0000 C CNN
+	1    3500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H7
+U 1 1 56A63C3B
+P 3900 4950
+F 0 "H7" H 3900 4700 60  0000 C CNN
+F 1 "Hole" H 3900 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 3900 4950 60  0001 C CNN
+F 3 "" H 3900 4950 60  0000 C CNN
+	1    3900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H8
+U 1 1 56A63C41
+P 4300 4950
+F 0 "H8" H 4300 4700 60  0000 C CNN
+F 1 "Hole" H 4300 4775 60  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 4300 4950 60  0001 C CNN
+F 3 "" H 4300 4950 60  0000 C CNN
+	1    4300 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

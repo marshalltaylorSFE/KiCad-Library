@@ -549,8 +549,6 @@ Wire Wire Line
 Wire Wire Line
 	3300 3350 3300 3250
 Connection ~ 3300 3250
-Wire Wire Line
-	1950 1650 1950 3250
 Connection ~ 1950 3250
 $Comp
 L +3V3 #PWR015
@@ -618,4 +616,228 @@ Text GLabel 3800 4700 0    50   UnSpc ~ 0
 +3V3_REG
 Text GLabel 4850 4350 0    50   UnSpc ~ 0
 +3V3_TOUT
+$Comp
+L R R20
+U 1 1 56A39733
+P 8200 2700
+F 0 "R20" V 8280 2700 50  0000 C CNN
+F 1 "34K" V 8200 2700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8130 2700 50  0001 C CNN
+F 3 "" H 8200 2700 50  0000 C CNN
+	1    8200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R19
+U 1 1 56A39739
+P 8200 2200
+F 0 "R19" V 8280 2200 50  0000 C CNN
+F 1 "11.3K" V 8200 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 8130 2200 50  0001 C CNN
+F 3 "" H 8200 2200 50  0000 C CNN
+	1    8200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1750 8600 1750
+Wire Wire Line
+	8600 1600 8600 2150
+Wire Wire Line
+	8200 1750 8200 2050
+Wire Wire Line
+	8200 2350 8200 2550
+Wire Wire Line
+	8200 2450 7600 2450
+Wire Wire Line
+	7600 2150 7600 2550
+Connection ~ 8200 2450
+Connection ~ 8200 1750
+Wire Wire Line
+	8200 3150 8200 2850
+$Comp
+L C C44
+U 1 1 56A3974E
+P 8600 2300
+F 0 "C44" H 8625 2400 50  0000 L CNN
+F 1 "10u" H 8625 2200 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 8638 2150 50  0001 C CNN
+F 3 "" H 8600 2300 50  0000 C CNN
+	1    8600 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C45
+U 1 1 56A39754
+P 7600 2700
+F 0 "C45" H 7625 2800 50  0000 L CNN
+F 1 "10u" H 7625 2600 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 7638 2550 50  0001 C CNN
+F 3 "" H 7600 2700 50  0000 C CNN
+	1    7600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2450 8600 3300
+Connection ~ 8600 1750
+Connection ~ 7600 2450
+Wire Wire Line
+	7600 2850 7600 3150
+Wire Wire Line
+	7000 1750 7200 1750
+$Comp
+L C C43
+U 1 1 56A3976B
+P 7000 2200
+F 0 "C43" H 7025 2300 50  0000 L CNN
+F 1 "10u" H 7025 2100 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 7038 2050 50  0001 C CNN
+F 3 "" H 7000 2200 50  0000 C CNN
+	1    7000 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1600 7000 2050
+Connection ~ 7000 1750
+Wire Wire Line
+	7000 2350 7000 3300
+$Comp
+L LDO-adj-4term U33
+U 1 1 56A3977A
+P 7600 1750
+F 0 "U33" H 7700 1500 60  0000 C CNN
+F 1 "LDO-adj-4term" H 7600 1900 60  0000 C CNN
+F 2 "SparkFun-Footprints:SF-SOT-223" H 7600 1750 60  0001 C CNN
+F 3 "" H 7600 1750 60  0000 C CNN
+	1    7600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 1850 8100 1850
+Wire Wire Line
+	8100 1850 8100 1750
+Connection ~ 8100 1750
+Wire Wire Line
+	7000 3150 8600 3150
+Connection ~ 7600 3150
+Connection ~ 8200 3150
+Wire Wire Line
+	8600 3300 9700 3300
+Connection ~ 8600 3150
+Wire Wire Line
+	8600 1600 9700 1600
+Text GLabel 9700 1600 2    50   Input ~ 0
+VUU
+Text GLabel 9700 3300 2    50   Input ~ 0
+UGND
+$Comp
+L CONN_01X01 P56
+U 1 1 56A3A761
+P 9000 1950
+F 0 "P56" H 9000 2050 50  0000 C CNN
+F 1 "CONN_01X01" H 9100 1950 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 9000 1950 50  0001 C CNN
+F 3 "" H 9000 1950 50  0000 C CNN
+	1    9000 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P57
+U 1 1 56A3AA28
+P 9250 1950
+F 0 "P57" H 9250 2050 50  0000 C CNN
+F 1 "CONN_01X01" H 9350 1950 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 9250 1950 50  0001 C CNN
+F 3 "" H 9250 1950 50  0000 C CNN
+	1    9250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P58
+U 1 1 56A3AAB7
+P 9500 1950
+F 0 "P58" H 9500 2050 50  0000 C CNN
+F 1 "VUU" H 9600 1950 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 9500 1950 50  0001 C CNN
+F 3 "" H 9500 1950 50  0000 C CNN
+	1    9500 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 1750 9000 1600
+Connection ~ 9000 1600
+Wire Wire Line
+	9250 1750 9250 1600
+Connection ~ 9250 1600
+Wire Wire Line
+	9500 1750 9500 1600
+Connection ~ 9500 1600
+$Comp
+L CONN_01X01 P60
+U 1 1 56A3B3A0
+P 9000 3650
+F 0 "P60" H 9000 3750 50  0000 C CNN
+F 1 "CONN_01X01" H 9100 3650 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 9000 3650 50  0001 C CNN
+F 3 "" H 9000 3650 50  0000 C CNN
+	1    9000 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P61
+U 1 1 56A3B3A6
+P 9250 3650
+F 0 "P61" H 9250 3750 50  0000 C CNN
+F 1 "CONN_01X01" H 9350 3650 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 9250 3650 50  0001 C CNN
+F 3 "" H 9250 3650 50  0000 C CNN
+	1    9250 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X01 P62
+U 1 1 56A3B3AC
+P 9500 3650
+F 0 "P62" H 9500 3750 50  0000 C CNN
+F 1 "UGND" H 9600 3650 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 9500 3650 50  0001 C CNN
+F 3 "" H 9500 3650 50  0000 C CNN
+	1    9500 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 3450 9000 3300
+Wire Wire Line
+	9250 3450 9250 3300
+Wire Wire Line
+	9500 3450 9500 3300
+Connection ~ 9000 3300
+Connection ~ 9250 3300
+Connection ~ 9500 3300
+Connection ~ 7000 3150
+$Comp
+L CONN_01X01 P59
+U 1 1 56A3B4F3
+P 7000 3500
+F 0 "P59" H 7000 3600 50  0000 C CNN
+F 1 "CONN_01X01" H 7100 3500 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 7000 3500 50  0001 C CNN
+F 3 "" H 7000 3500 50  0000 C CNN
+	1    7000 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 1650 1950 3250
+$Comp
+L CONN_01X01 P63
+U 1 1 56A3C8A9
+P 7000 1400
+F 0 "P63" H 7000 1500 50  0000 C CNN
+F 1 "CONN_01X01" H 7100 1400 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 7000 1400 50  0001 C CNN
+F 3 "" H 7000 1400 50  0000 C CNN
+	1    7000 1400
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7000 1850 0    60   Input ~ 0
+VUUIN
 $EndSCHEMATC
