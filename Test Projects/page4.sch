@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Teensy_test_layout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,6 +37,7 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
+LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -146,86 +148,6 @@ F 1 "TRS_6term" V 3575 4450 60  0001 C CNN
 F 2 "SparkFun-Footprints:SF-Neutrik-Jack-6-term" H 3000 4250 60  0001 C CNN
 F 3 "" H 3000 4250 60  0000 C CNN
 	1    3200 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L SF-LM358 U12
-U 1 1 568A55E7
-P 5050 6900
-F 0 "U12" H 5100 7100 50  0000 L CNN
-F 1 "SF-LM358" H 5100 6650 50  0000 L CNN
-F 2 "SparkFun-Footprints:SF-SOIC-8" H 5150 6900 50  0001 C CNN
-F 3 "" H 5150 6900 50  0000 C CNN
-	1    5050 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L SF-LM358 U12
-U 2 1 568A561C
-P 6100 6850
-F 0 "U12" H 6150 7050 50  0000 L CNN
-F 1 "SF-LM358" H 6150 6600 50  0000 L CNN
-F 2 "SparkFun-Footprints:SF-SOIC-8" H 6200 6850 50  0001 C CNN
-F 3 "" H 6200 6850 50  0000 C CNN
-	2    6100 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L SF-LM358 U12
-U 3 1 568A569D
-P 3900 6850
-F 0 "U12" H 3950 7050 50  0000 L CNN
-F 1 "SF-LM358" H 3950 6600 50  0000 L CNN
-F 2 "SparkFun-Footprints:SF-SOIC-8" H 4000 6850 50  0001 C CNN
-F 3 "" H 4000 6850 50  0000 C CNN
-	3    3900 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C18
-U 1 1 568A574D
-P 3650 6850
-F 0 "C18" H 3675 6950 50  0000 L CNN
-F 1 "C" H 3675 6750 50  0000 L CNN
-F 2 "Capacitors_Tantalum_SMD:TantalC_SizeB_EIA-3528_Reflow" H 3688 6700 50  0001 C CNN
-F 3 "" H 3650 6850 50  0000 C CNN
-	1    3650 6850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3900 7150 3900 7400
-Wire Wire Line
-	3900 7250 3650 7250
-Wire Wire Line
-	3650 7250 3650 7000
-Wire Wire Line
-	3650 6700 3650 6400
-Wire Wire Line
-	3650 6400 3900 6400
-Wire Wire Line
-	3900 6250 3900 6550
-Connection ~ 3900 6400
-Connection ~ 3900 7250
-$Comp
-L +5V #PWR031
-U 1 1 568A5A6C
-P 3900 6250
-F 0 "#PWR031" H 3900 6100 50  0001 C CNN
-F 1 "+5V" H 3900 6390 50  0000 C CNN
-F 2 "" H 3900 6250 50  0000 C CNN
-F 3 "" H 3900 6250 50  0000 C CNN
-	1    3900 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR032
-U 1 1 568A5AA0
-P 3900 7400
-F 0 "#PWR032" H 3900 7150 50  0001 C CNN
-F 1 "GND" H 3900 7250 50  0000 C CNN
-F 2 "" H 3900 7400 50  0000 C CNN
-F 3 "" H 3900 7400 50  0000 C CNN
-	1    3900 7400
 	1    0    0    -1  
 $EndComp
 $Comp

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Teensy_test_layout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,6 +37,7 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
+LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -1035,4 +1037,90 @@ Text GLabel 5050 3250 0    60   Input ~ 0
 KGND
 Text GLabel 5650 3250 0    60   Input ~ 0
 KGND
+Text GLabel 6200 2000 0    50   Input ~ 0
+VKK
+Text GLabel 6200 2200 0    50   Input ~ 0
+VKK
+Text GLabel 6200 3250 0    60   Input ~ 0
+KGND
+Text GLabel 6200 3450 0    60   Input ~ 0
+KGND
+$Comp
+L CONN_01X01 P82
+U 1 1 56A7BE80
+P 6500 2000
+F 0 "P82" H 6500 2100 50  0000 C CNN
+F 1 "CONN_01X01" V 6600 2000 50  0001 C CNN
+F 2 "SparkFun-Footprints:PTH_LUG_.05" H 6500 2000 50  0001 C CNN
+F 3 "" H 6500 2000 50  0000 C CNN
+	1    6500 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P83
+U 1 1 56A7C0E5
+P 6500 2200
+F 0 "P83" H 6500 2300 50  0000 C CNN
+F 1 "CONN_01X01" V 6600 2200 50  0001 C CNN
+F 2 "SparkFun-Footprints:PTH_LUG_.05" H 6500 2200 50  0001 C CNN
+F 3 "" H 6500 2200 50  0000 C CNN
+	1    6500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P84
+U 1 1 56A7C147
+P 6500 2400
+F 0 "P84" H 6500 2500 50  0000 C CNN
+F 1 "CONN_01X01" V 6600 2400 50  0001 C CNN
+F 2 "SparkFun-Footprints:PTH_LUG_.05" H 6500 2400 50  0001 C CNN
+F 3 "" H 6500 2400 50  0000 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P85
+U 1 1 56A7C1B4
+P 6500 3250
+F 0 "P85" H 6500 3350 50  0000 C CNN
+F 1 "CONN_01X01" V 6600 3250 50  0001 C CNN
+F 2 "SparkFun-Footprints:PTH_LUG_.05" H 6500 3250 50  0001 C CNN
+F 3 "" H 6500 3250 50  0000 C CNN
+	1    6500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X01 P86
+U 1 1 56A7C236
+P 6500 3450
+F 0 "P86" H 6500 3550 50  0000 C CNN
+F 1 "CONN_01X01" V 6600 3450 50  0001 C CNN
+F 2 "SparkFun-Footprints:PTH_LUG_.05" H 6500 3450 50  0001 C CNN
+F 3 "" H 6500 3450 50  0000 C CNN
+	1    6500 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR032
+U 1 1 56A7CCB1
+P 6200 2500
+F 0 "#PWR032" H 6200 2250 50  0001 C CNN
+F 1 "GND" H 6200 2350 50  0000 C CNN
+F 2 "" H 6200 2500 50  0000 C CNN
+F 3 "" H 6200 2500 50  0000 C CNN
+	1    6200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2500 6200 2400
+Wire Wire Line
+	6200 2400 6300 2400
+Wire Wire Line
+	6200 2200 6300 2200
+Wire Wire Line
+	6200 2000 6300 2000
+Wire Wire Line
+	6200 3250 6300 3250
+Wire Wire Line
+	6200 3450 6300 3450
 $EndSCHEMATC

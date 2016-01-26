@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Teensy_test_layout-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,6 +37,7 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
+LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -54,12 +56,12 @@ $EndDescr
 $Comp
 L 2Jumper JMP3
 U 1 1 569EDBC7
-P 2800 5800
-F 0 "JMP3" H 2800 5895 60  0000 C CNN
-F 1 "2Jumper" H 2800 5985 60  0001 C CNN
-F 2 "SparkFun-Footprints:SF-2way-open" H 3955 5870 60  0001 C CNN
-F 3 "" H 3955 5870 60  0000 C CNN
-	1    2800 5800
+P 3300 5800
+F 0 "JMP3" H 3300 5895 60  0000 C CNN
+F 1 "2Jumper" H 3300 5985 60  0001 C CNN
+F 2 "SparkFun-Footprints:SF-2way-open" H 4455 5870 60  0001 C CNN
+F 3 "" H 4455 5870 60  0000 C CNN
+	1    3300 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -76,12 +78,12 @@ $EndComp
 $Comp
 L 2Jumper JMP2
 U 1 1 569EDBD5
-P 2600 5600
-F 0 "JMP2" H 2600 5695 60  0000 C CNN
-F 1 "2Jumper" H 2600 5785 60  0001 C CNN
-F 2 "SparkFun-Footprints:SF-2way-open" H 3755 5670 60  0001 C CNN
-F 3 "" H 3755 5670 60  0000 C CNN
-	1    2600 5600
+P 3100 5600
+F 0 "JMP2" H 3100 5695 60  0000 C CNN
+F 1 "2Jumper" H 3100 5785 60  0001 C CNN
+F 2 "SparkFun-Footprints:SF-2way-open" H 4255 5670 60  0001 C CNN
+F 3 "" H 4255 5670 60  0000 C CNN
+	1    3100 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -344,9 +346,9 @@ Wire Wire Line
 Wire Wire Line
 	2300 4950 4150 4950
 Wire Wire Line
-	2400 5600 2300 5600
+	2300 5600 2900 5600
 Wire Wire Line
-	2600 5800 2300 5800
+	2300 5800 3100 5800
 Wire Wire Line
 	4850 3550 4850 4500
 Wire Wire Line
@@ -483,19 +485,19 @@ F 3 "" H 9750 5950 50  0000 C CNN
 	1    9750 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 7950 4150 0    50   Input ~ 0
+Text GLabel 7150 4150 0    50   Input ~ 0
 SDA0
-Text GLabel 7950 4250 0    50   Input ~ 0
+Text GLabel 7150 4250 0    50   Input ~ 0
 SCL0
-Text GLabel 7950 4450 0    50   Input ~ 0
+Text GLabel 7150 4450 0    50   Input ~ 0
 I2S_MCLK
-Text GLabel 7950 4550 0    50   Input ~ 0
+Text GLabel 7150 4550 0    50   Input ~ 0
 I2S_BCLK
-Text GLabel 7950 4650 0    50   Input ~ 0
+Text GLabel 7150 4650 0    50   Input ~ 0
 I2S_LRCLK
-Text GLabel 7850 4750 0    50   Input ~ 0
+Text GLabel 7050 4750 0    50   Input ~ 0
 I2S_DIN1
-Text GLabel 7850 4950 0    50   Input ~ 0
+Text GLabel 7050 4950 0    50   Input ~ 0
 I2S_DOUT1
 $Comp
 L GND #PWR0130
@@ -715,19 +717,19 @@ Wire Wire Line
 Wire Wire Line
 	8650 4850 8850 4850
 Wire Wire Line
-	8850 4650 7950 4650
+	8850 4650 7150 4650
 Wire Wire Line
-	8850 4550 7950 4550
+	8850 4550 7150 4550
 Wire Wire Line
-	8850 4450 7950 4450
+	8850 4450 7150 4450
 Wire Wire Line
-	7950 4250 8850 4250
+	7150 4250 8850 4250
 Wire Wire Line
-	7950 4150 8850 4150
+	7150 4150 8850 4150
 Wire Wire Line
-	7900 4750 7850 4750
+	7050 4750 7900 4750
 Wire Wire Line
-	8150 4950 7850 4950
+	7050 4950 8150 4950
 Wire Wire Line
 	9550 2750 9550 3700
 Wire Wire Line
@@ -1265,9 +1267,9 @@ Text GLabel 4400 700  0    50   Input ~ 0
 1/2AINL
 Text GLabel 4400 1050 0    50   Input ~ 0
 1/2AINR
-Text GLabel 4400 1400 0    50   Input ~ 0
-1/2AOUTR
 Text GLabel 4400 1750 0    50   Input ~ 0
+1/2AOUTR
+Text GLabel 4400 1400 0    50   Input ~ 0
 1/2AOUTL
 Wire Wire Line
 	10250 4150 10350 4150
@@ -1289,144 +1291,140 @@ Text GLabel 8000 700  0    50   Input ~ 0
 3/4AINL
 Text GLabel 8000 1050 0    50   Input ~ 0
 3/4AINR
-Text GLabel 8000 1400 0    50   Input ~ 0
-3/4AOUTR
 Text GLabel 8000 1750 0    50   Input ~ 0
+3/4AOUTR
+Text GLabel 8000 1400 0    50   Input ~ 0
 3/4AOUTL
 Wire Wire Line
-	2800 5600 3800 5600
+	3300 5600 3800 5600
 Wire Wire Line
 	3800 5600 3800 5550
 Wire Wire Line
 	3800 5550 4150 5550
 Wire Wire Line
-	3000 5800 3950 5800
+	3500 5800 3950 5800
 $Comp
 L CONN_01X01 P72
 U 1 1 56A4747C
-P 3700 4400
-F 0 "P72" H 3700 4500 50  0000 C CNN
-F 1 "DOUT0" H 3800 4400 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 3700 4400 50  0001 C CNN
-F 3 "" H 3700 4400 50  0000 C CNN
-	1    3700 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X01 P71
-U 1 1 56A47876
-P 3500 4400
-F 0 "P71" H 3500 4500 50  0000 C CNN
-F 1 "DIN0" H 3600 4400 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 3500 4400 50  0001 C CNN
-F 3 "" H 3500 4400 50  0000 C CNN
-	1    3500 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X01 P70
-U 1 1 56A47910
-P 3300 4400
-F 0 "P70" H 3300 4500 50  0000 C CNN
-F 1 "LRCLK" H 3400 4400 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 3300 4400 50  0001 C CNN
-F 3 "" H 3300 4400 50  0000 C CNN
-	1    3300 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X01 P69
-U 1 1 56A479A5
-P 3100 4400
-F 0 "P69" H 3100 4500 50  0000 C CNN
-F 1 "BCLK" H 3200 4400 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 3100 4400 50  0001 C CNN
-F 3 "" H 3100 4400 50  0000 C CNN
-	1    3100 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X01 P68
-U 1 1 56A47A41
-P 2900 4400
-F 0 "P68" H 2900 4500 50  0000 C CNN
-F 1 "MCLK" H 3000 4400 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 2900 4400 50  0001 C CNN
-F 3 "" H 2900 4400 50  0000 C CNN
-	1    2900 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X01 P67
-U 1 1 56A47ADC
 P 2700 4400
-F 0 "P67" H 2700 4500 50  0000 C CNN
-F 1 "SCL0" H 2800 4400 50  0000 L CNN
+F 0 "P72" H 2700 4500 50  0000 C CNN
+F 1 "DOUT0" H 2800 4400 50  0000 L CNN
 F 2 "SparkFun-Footprints:TestHole" H 2700 4400 50  0001 C CNN
 F 3 "" H 2700 4400 50  0000 C CNN
 	1    2700 4400
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X01 P66
-U 1 1 56A47B7C
+L CONN_01X01 P71
+U 1 1 56A47876
 P 2500 4400
-F 0 "P66" H 2500 4500 50  0000 C CNN
-F 1 "SDA0" H 2600 4400 50  0000 L CNN
+F 0 "P71" H 2500 4500 50  0000 C CNN
+F 1 "DIN0" H 2600 4400 50  0000 L CNN
 F 2 "SparkFun-Footprints:TestHole" H 2500 4400 50  0001 C CNN
 F 3 "" H 2500 4400 50  0000 C CNN
 	1    2500 4400
 	0    -1   -1   0   
 $EndComp
+$Comp
+L CONN_01X01 P70
+U 1 1 56A47910
+P 3700 4400
+F 0 "P70" H 3700 4500 50  0000 C CNN
+F 1 "LRCLK" H 3800 4400 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 3700 4400 50  0001 C CNN
+F 3 "" H 3700 4400 50  0000 C CNN
+	1    3700 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P69
+U 1 1 56A479A5
+P 3500 4400
+F 0 "P69" H 3500 4500 50  0000 C CNN
+F 1 "BCLK" H 3600 4400 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0000 C CNN
+	1    3500 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P68
+U 1 1 56A47A41
+P 3300 4400
+F 0 "P68" H 3300 4500 50  0000 C CNN
+F 1 "MCLK" H 3400 4400 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 3300 4400 50  0001 C CNN
+F 3 "" H 3300 4400 50  0000 C CNN
+	1    3300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P67
+U 1 1 56A47ADC
+P 3100 4400
+F 0 "P67" H 3100 4500 50  0000 C CNN
+F 1 "SCL0" H 3200 4400 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 3100 4400 50  0001 C CNN
+F 3 "" H 3100 4400 50  0000 C CNN
+	1    3100 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P66
+U 1 1 56A47B7C
+P 2900 4400
+F 0 "P66" H 2900 4500 50  0000 C CNN
+F 1 "SDA0" H 3000 4400 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 2900 4400 50  0001 C CNN
+F 3 "" H 2900 4400 50  0000 C CNN
+	1    2900 4400
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	2500 4950 2500 4600
-Connection ~ 2500 4950
+	2900 4950 2900 4600
+Connection ~ 2900 4950
 Wire Wire Line
-	2700 4600 2700 5050
-Connection ~ 2700 5050
+	3100 4600 3100 5050
+Connection ~ 3100 5050
 Wire Wire Line
-	2900 4600 2900 5250
-Connection ~ 2900 5250
+	3300 4600 3300 5250
+Connection ~ 3300 5250
 Wire Wire Line
-	3100 4600 3100 5350
-Connection ~ 3100 5350
+	3500 4600 3500 5350
+Connection ~ 3500 5350
 Wire Wire Line
-	3300 4600 3300 5450
-Connection ~ 3300 5450
+	3700 4600 3700 5450
+Connection ~ 3700 5450
 Wire Wire Line
-	3500 4600 3500 5600
-Connection ~ 3500 5600
+	2500 4600 2500 5600
 Wire Wire Line
-	3700 4600 3700 5800
-Connection ~ 3700 5800
+	2700 4600 2700 5800
 $Comp
 L CONN_01X01 P65
 U 1 1 56A48D54
-P 8600 3550
-F 0 "P65" H 8600 3650 50  0000 C CNN
-F 1 "DOUT1" H 8700 3550 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 8600 3550 50  0001 C CNN
-F 3 "" H 8600 3550 50  0000 C CNN
-	1    8600 3550
+P 7750 3550
+F 0 "P65" H 7750 3650 50  0000 C CNN
+F 1 "DOUT1" H 7850 3550 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 7750 3550 50  0001 C CNN
+F 3 "" H 7750 3550 50  0000 C CNN
+	1    7750 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L CONN_01X01 P64
 U 1 1 56A48D5A
-P 8400 3550
-F 0 "P64" H 8400 3650 50  0000 C CNN
-F 1 "DIN1" H 8500 3550 50  0000 L CNN
-F 2 "SparkFun-Footprints:TestHole" H 8400 3550 50  0001 C CNN
-F 3 "" H 8400 3550 50  0000 C CNN
-	1    8400 3550
+P 7550 3550
+F 0 "P64" H 7550 3650 50  0000 C CNN
+F 1 "DIN1" H 7650 3550 50  0000 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 7550 3550 50  0001 C CNN
+F 3 "" H 7550 3550 50  0000 C CNN
+	1    7550 3550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8400 3750 8400 4750
+	7550 3750 7550 4750
 Wire Wire Line
-	8600 3750 8600 4950
-Connection ~ 8600 4950
-Connection ~ 8400 4750
+	7750 3750 7750 4950
 $Comp
 L 2Jumper JMP12
 U 1 1 56A4A223
@@ -1595,4 +1593,8 @@ Wire Wire Line
 Wire Wire Line
 	8600 1600 8550 1600
 Connection ~ 8600 1750
+Connection ~ 2500 5600
+Connection ~ 2700 5800
+Connection ~ 7550 4750
+Connection ~ 7750 4950
 $EndSCHEMATC
