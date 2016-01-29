@@ -37,6 +37,7 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
+LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -494,16 +495,16 @@ Wire Wire Line
 Wire Wire Line
 	3350 2350 3400 2350
 Text GLabel 1050 7100 0    50   Input ~ 0
-A
+C
 Text GLabel 1050 7200 0    50   Input ~ 0
-B
+D
 Wire Wire Line
 	1100 7100 1050 7100
 Wire Wire Line
 	1050 7200 1100 7200
-Text GLabel 6100 6650 2    50   Input ~ 0
+Text GLabel 6100 6250 2    50   Input ~ 0
 KA2
-Text GLabel 6100 6750 2    50   Input ~ 0
+Text GLabel 6100 6350 2    50   Input ~ 0
 KA3
 $Comp
 L GND #PWR055
@@ -600,33 +601,22 @@ Wire Wire Line
 	3350 2050 3400 2050
 Wire Wire Line
 	1050 2050 1100 2050
-Text GLabel 6100 6850 2    50   Input ~ 0
+Text GLabel 6100 6450 2    50   Input ~ 0
 KEN
-Text GLabel 6100 6950 2    50   Input ~ 0
-KA
-Text GLabel 6100 7050 2    50   Input ~ 0
-KB
-$Comp
-L CONN_01X07 P21
-U 1 1 5688BBDD
-P 5850 6750
-F 0 "P21" H 5850 7150 50  0000 C CNN
-F 1 "CONN_01X07" V 5950 6750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07" H 5850 6750 50  0001 C CNN
-F 3 "" H 5850 6750 50  0000 C CNN
-	1    5850 6750
-	-1   0    0    -1  
-$EndComp
+Text GLabel 6100 6750 2    50   Input ~ 0
+A
+Text GLabel 6100 6850 2    50   Input ~ 0
+B
 Wire Wire Line
-	6050 6650 6100 6650
+	6050 6250 6100 6250
+Wire Wire Line
+	6100 6350 6050 6350
+Wire Wire Line
+	6050 6450 6100 6450
 Wire Wire Line
 	6100 6750 6050 6750
 Wire Wire Line
 	6050 6850 6100 6850
-Wire Wire Line
-	6100 6950 6050 6950
-Wire Wire Line
-	6050 7050 6100 7050
 $Comp
 L C C24
 U 1 1 568900D7
@@ -1027,9 +1017,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 4800 3400 4800
 Text GLabel 3350 7100 0    50   Input ~ 0
-A
+C
 Text GLabel 3350 7200 0    50   Input ~ 0
-B
+D
 Wire Wire Line
 	3400 7100 3350 7100
 Wire Wire Line
@@ -1143,14 +1133,14 @@ Text GLabel 5650 4200 0    50   Input ~ 0
 K55
 Text GLabel 5650 4300 0    50   Input ~ 0
 K56
-Text GLabel 6100 6550 2    50   Input ~ 0
+Text GLabel 6100 6150 2    50   Input ~ 0
 KA1
-Text GLabel 6100 6450 2    50   Input ~ 0
+Text GLabel 6100 6050 2    50   Input ~ 0
 KA0
 Wire Wire Line
-	6050 6550 6100 6550
+	6050 6150 6100 6150
 Wire Wire Line
-	6100 6450 6050 6450
+	6100 6050 6050 6050
 $Comp
 L SF-4052 U13
 U 1 1 5689B3AF
@@ -1529,4 +1519,34 @@ Wire Wire Line
 	6400 3200 6400 3250
 Wire Wire Line
 	8700 3200 8700 3250
+$Comp
+L CONN_01X04 P89
+U 1 1 56AAE984
+P 5850 6900
+F 0 "P89" H 5850 7150 50  0000 C CNN
+F 1 "CONN_01X04" V 5950 6900 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 5850 6900 50  0001 C CNN
+F 3 "" H 5850 6900 50  0000 C CNN
+	1    5850 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X05 P21
+U 1 1 56AAE9F7
+P 5850 6250
+F 0 "P21" H 5850 6550 50  0000 C CNN
+F 1 "CONN_01X05" V 5950 6250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 5850 6250 50  0001 C CNN
+F 3 "" H 5850 6250 50  0000 C CNN
+	1    5850 6250
+	-1   0    0    -1  
+$EndComp
+Text GLabel 6100 7050 2    50   Input ~ 0
+D
+Wire Wire Line
+	6050 7050 6100 7050
+Text GLabel 6100 6950 2    50   Input ~ 0
+C
+Wire Wire Line
+	6050 6950 6100 6950
 $EndSCHEMATC
