@@ -37,7 +37,6 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
-LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -244,9 +243,9 @@ KA2
 Text GLabel 9000 2950 0    50   Input ~ 0
 KA3
 Text GLabel 9000 3450 0    50   Input ~ 0
-KA
+A
 Text GLabel 9000 3550 0    50   Input ~ 0
-KB
+B
 Text GLabel 9000 1850 0    50   Input ~ 0
 BSER
 Text GLabel 9000 2250 0    50   Input ~ 0
@@ -358,17 +357,6 @@ F 3 "" H 5500 2650 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X01 P31
-U 1 1 56A0D135
-P 8800 2150
-F 0 "P31" H 9200 2150 50  0000 C CNN
-F 1 "PIN20" H 9000 2150 50  0000 C CNN
-F 2 "SparkFun-Footprints:Single_PTH" H 8800 2150 50  0001 C CNN
-F 3 "" H 8800 2150 50  0000 C CNN
-	1    8800 2150
-	-1   0    0    -1  
-$EndComp
-$Comp
 L CONN_01X01 P35
 U 1 1 56A0D15D
 P 8800 3150
@@ -377,28 +365,6 @@ F 1 "PIN37" H 9000 3150 50  0000 C CNN
 F 2 "SparkFun-Footprints:Single_PTH" H 8800 3150 50  0001 C CNN
 F 3 "" H 8800 3150 50  0000 C CNN
 	1    8800 3150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X01 P36
-U 1 1 56A0D36D
-P 8800 3650
-F 0 "P36" H 9200 3650 50  0000 C CNN
-F 1 "PIN29" H 9000 3650 50  0000 C CNN
-F 2 "SparkFun-Footprints:Single_PTH" H 8800 3650 50  0001 C CNN
-F 3 "" H 8800 3650 50  0000 C CNN
-	1    8800 3650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L CONN_01X01 P37
-U 1 1 56A0D3D2
-P 8800 3850
-F 0 "P37" H 9200 3850 50  0000 C CNN
-F 1 "PIN31" H 9000 3850 50  0000 C CNN
-F 2 "SparkFun-Footprints:Single_PTH" H 8800 3850 50  0001 C CNN
-F 3 "" H 8800 3850 50  0000 C CNN
-	1    8800 3850
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -827,4 +793,19 @@ Wire Wire Line
 	1700 5550 1200 5550
 Wire Wire Line
 	1200 5550 1200 5150
+$Comp
+L CONN_01X01 P37
+U 1 1 56A0D3D2
+P 8800 3850
+F 0 "P37" H 9200 3850 50  0000 C CNN
+F 1 "PIN31" H 9000 3850 50  0000 C CNN
+F 2 "SparkFun-Footprints:Single_PTH" H 8800 3850 50  0001 C CNN
+F 3 "" H 8800 3850 50  0000 C CNN
+	1    8800 3850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 9000 3650 0    50   Input ~ 0
+C
+Text GLabel 9000 2150 0    50   Input ~ 0
+D
 $EndSCHEMATC

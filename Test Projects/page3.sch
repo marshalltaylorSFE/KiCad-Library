@@ -37,7 +37,6 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
-LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -1014,13 +1013,13 @@ VKK
 Text GLabel 3000 2000 0    50   Input ~ 0
 VKK
 Text GLabel 3850 2000 0    50   Input ~ 0
-VKK
+VKK2
 Text GLabel 4450 2000 0    50   Input ~ 0
-VKK
+VKK2
 Text GLabel 5050 2000 0    50   Input ~ 0
-VKK
+VKK2
 Text GLabel 5650 2000 0    50   Input ~ 0
-VKK
+VKK2
 Text GLabel 1200 3250 0    60   Input ~ 0
 KGND
 Text GLabel 1800 3250 0    60   Input ~ 0
@@ -1030,21 +1029,21 @@ KGND
 Text GLabel 3000 3250 0    60   Input ~ 0
 KGND
 Text GLabel 3850 3250 0    60   Input ~ 0
-KGND
+KGND2
 Text GLabel 4450 3250 0    60   Input ~ 0
-KGND
+KGND2
 Text GLabel 5050 3250 0    60   Input ~ 0
-KGND
+KGND2
 Text GLabel 5650 3250 0    60   Input ~ 0
-KGND
+KGND2
 Text GLabel 6200 2000 0    50   Input ~ 0
 VKK
 Text GLabel 6200 2200 0    50   Input ~ 0
-VKK
+VKK2
 Text GLabel 6200 3250 0    60   Input ~ 0
 KGND
 Text GLabel 6200 3450 0    60   Input ~ 0
-KGND
+KGND2
 $Comp
 L CONN_01X01 P82
 U 1 1 56A7BE80

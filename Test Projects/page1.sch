@@ -37,7 +37,6 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
-LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -876,4 +875,20 @@ F 3 "" H 1950 6500 60  0000 C CNN
 	1    2100 6600
 	1    0    0    -1  
 $EndComp
+$Comp
+L CONN_01X01 P90
+U 1 1 56ABFA3B
+P 2400 700
+F 0 "P90" H 2400 800 50  0000 C CNN
+F 1 "CONN_01X01" H 2500 700 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01" H 2400 700 50  0001 C CNN
+F 3 "" H 2400 700 50  0000 C CNN
+	1    2400 700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1150 2000 700 
+Wire Wire Line
+	2000 700  2200 700 
+Connection ~ 2000 1150
 $EndSCHEMATC
