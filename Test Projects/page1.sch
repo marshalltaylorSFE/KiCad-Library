@@ -37,6 +37,7 @@ LIBS:SparkFun-IC-PMIC
 LIBS:SparkFun-Jacks
 LIBS:SparkFun-Mounting
 LIBS:SparkFun-Opto
+LIBS:SparkFun-Connectors
 LIBS:Teensy_test_layout-cache
 EELAYER 25 0
 EELAYER END
@@ -891,4 +892,44 @@ Wire Wire Line
 Wire Wire Line
 	2000 700  2200 700 
 Connection ~ 2000 1150
+$Comp
+L CONN_01X01 P31
+U 1 1 56AEC633
+P 5200 3050
+F 0 "P31" H 5200 3150 50  0000 C CNN
+F 1 "CONN_01X01" H 5300 3050 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 5200 3050 50  0001 C CNN
+F 3 "" H 5200 3050 50  0000 C CNN
+	1    5200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3050 4700 3050
+Connection ~ 4700 3050
+$Comp
+L CONN_01X01 P36
+U 1 1 56AFD601
+P 5200 3250
+F 0 "P36" H 5200 3350 50  0000 C CNN
+F 1 "CONN_01X01" H 5300 3250 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 5200 3250 50  0001 C CNN
+F 3 "" H 5200 3250 50  0000 C CNN
+	1    5200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 56AFDE83
+P 4900 3300
+F 0 "#PWR019" H 4900 3050 50  0001 C CNN
+F 1 "GND" H 4900 3150 50  0000 C CNN
+F 2 "" H 4900 3300 50  0000 C CNN
+F 3 "" H 4900 3300 50  0000 C CNN
+	1    4900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3250 4900 3250
+Wire Wire Line
+	4900 3250 4900 3300
 $EndSCHEMATC
