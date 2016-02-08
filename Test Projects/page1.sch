@@ -59,7 +59,7 @@ U 1 1 56886AFB
 P 5750 4400
 F 0 "U3" V 6200 4400 50  0000 C CNN
 F 1 "Teensy_3.2" V 6100 4400 50  0000 C CNN
-F 2 "teensy footprints:Teensy_3.2_Route" H 5450 4700 50  0001 C CNN
+F 2 "teensy footprints:Teensy_3.2_Grid" H 5450 4700 50  0001 C CNN
 F 3 "" H 5450 4700 50  0000 C CNN
 	1    5750 4400
 	1    0    0    -1  
@@ -129,7 +129,7 @@ Wire Wire Line
 	3400 4850 3400 5250
 Connection ~ 3400 5150
 Wire Wire Line
-	3200 4450 3800 4450
+	3800 4450 3200 4450
 Wire Wire Line
 	3400 4450 3400 4550
 Wire Wire Line
@@ -311,7 +311,7 @@ F 3 "" H 2200 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 2850 2200 2750
+	2200 2750 2200 2850
 Connection ~ 2200 2750
 Wire Wire Line
 	2200 3250 2200 3150
@@ -1088,4 +1088,61 @@ Wire Wire Line
 Connection ~ 3800 1250
 Wire Wire Line
 	1950 2750 2400 2750
+$Comp
+L CONN_01X01 P115
+U 1 1 56B7744C
+P 4350 4750
+F 0 "P115" H 4350 4850 50  0000 C CNN
+F 1 "CONN_01X01" H 4450 4750 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 4350 4750 50  0001 C CNN
+F 3 "" H 4350 4750 50  0000 C CNN
+	1    4350 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X01 P114
+U 1 1 56B7756D
+P 4150 4650
+F 0 "P114" H 4150 4750 50  0000 C CNN
+F 1 "CONN_01X01" H 4250 4650 50  0001 L CNN
+F 2 "SparkFun-Footprints:TestHole" H 4150 4650 50  0001 C CNN
+F 3 "" H 4150 4650 50  0000 C CNN
+	1    4150 4650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4950 4650 4350 4650
+Wire Wire Line
+	4550 4750 4950 4750
+Text GLabel 4600 4650 1    30   Input ~ 0
+AREF
+Text GLabel 4700 4750 1    30   Input ~ 0
+AGND
+$Comp
+L 2Jumper JMP30
+U 1 1 56B7BA60
+P 4600 5150
+F 0 "JMP30" H 4600 5245 60  0000 C CNN
+F 1 "2Jumper" H 4600 5335 60  0001 C CNN
+F 2 "SparkFun-Footprints:SF-2way-open" H 5755 5220 60  0001 C CNN
+F 3 "" H 5755 5220 60  0000 C CNN
+	1    4600 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 56B7C292
+P 4600 5450
+F 0 "#PWR024" H 4600 5200 50  0001 C CNN
+F 1 "GND" H 4600 5300 50  0000 C CNN
+F 2 "" H 4600 5450 50  0000 C CNN
+F 3 "" H 4600 5450 50  0000 C CNN
+	1    4600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4950 4600 4750
+Connection ~ 4600 4750
+Wire Wire Line
+	4600 5350 4600 5450
 $EndSCHEMATC
